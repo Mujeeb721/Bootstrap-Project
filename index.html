@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container"> <a class="navbar-brand logo-hover-effect fw-bold fs-4 text-primary" href="/">
+                <svg class="bi d-inline-block align-text-top me-1" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                DevStudio </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.206 5.894 100.223 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                fill="currentColor" />
+        </symbol>
+    </svg>
+    <!-- Hero Section -->
+    <div class="container px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.2sNAb8cIxpOQ9Hi17hbg_AHaEK&pid=Api&P=0&h=220"
+                    class="d-block mx-lg-auto img-fluid rounded-circle image-hover-effect"
+                    alt="Expert Bootstrap 5 Web Development" width="700" height="500" loading="lazy">
+            </div>
+    
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-primary lh-1 mb-3">Expert Bootstrap 5 Web Development in Karachi</h1>
+                <p class="lead mb-4">
+                    We build fast, mobile-first websites using the power and flexibility of Bootstrap 5. Get a stunning
+                    online presence crafted by experts right here in Karachi, designed to engage your audience and
+                    achieve your digital goals.
+                </p>
+                <div class="d-grid gap-3 d-md-flex justify-content-md-start">
+                    <button type="button"
+                        class="btn btn-primary btn-lg px-4 me-md-2 d-inline-flex align-items-center btn-hover-effect">
+                        <svg class="bi me-2" width="20" height="20">
+                            <use xlink:href="#briefcase"></use>
+                        </svg>
+                        Our Services
+                    </button>
+                    <button type="button"
+                        class="btn btn-outline-secondary btn-lg px-4 d-inline-flex align-items-center btn-hover-effect">
+                        <svg class="bi me-2" width="20" height="20">
+                            <use xlink:href="#chat-right-text"></use>
+                        </svg>
+                        Get a Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="briefcase" viewBox="0 0 16 16">
+            <path
+                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+        </symbol>
+        <symbol id="chat-right-text" viewBox="0 0 16 16">
+            <path
+                d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+            <path
+                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+        </symbol>
+    </svg>
+    <!-- About Section -->
+    <section class="about-section py-5"  id="about">
+        <div class="container mb-4">
+            <div class="p-5 text-center bg-light rounded-3 about-box shadow-sm">
+    
+                <svg class="bi mt-4 mb-4 text-primary" width="80" height="80">
+                    <use xlink:href="#people-fill"></use>
+                </svg>
+    
+                <h1 class="display-5 fw-bold text-body-emphasis mb-3">Who We Are</h1>
+    
+                <p class="col-lg-8 mx-auto fs-5 text-body-secondary">
+                    Driven by passion and innovation here in Karachi, we're dedicated to providing [Your Service/Product
+                    Field, e.g., cutting-edge digital solutions]. Our team values collaboration, transparency, and
+                    delivering exceptional results that help our clients thrive. We believe in building strong partnerships
+                    and crafting experiences that truly matter.
+                </p>
+    
+                <div class="d-inline-flex flex-wrap justify-content-center gap-3 mb-5"> <button
+                        class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill btn-hover-effect"
+                        type="button">
+                        Learn More
+                        <svg class="bi ms-2" width="24" height="24">
+                            <use xlink:href="#arrow-right-short"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill btn-hover-effect" type="button">
+                        Contact Us
+                        <svg class="bi ms-2" width="20" height="20">
+                            <use xlink:href="#envelope"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="people-fill" viewBox="0 0 16 16">
+            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            <path fill-rule="evenodd"
+                d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+        </symbol>
+        <symbol id="arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+        </symbol>
+        <symbol id="envelope" viewBox="0 0 16 16">
+            <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+        </symbol>
+    </svg>
+
+    <!-- Features section -->
+    <section class="bg-body-tertiary py-5">
+        <div class="container px-4 py-5" id="features">
+            <h2 class="pb-3 mb-4 border-bottom text-center text-primary fw-bold">Core Features of Our Bootstrap 5
+                Development</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div
+                        class="feature-card bg-white p-4 rounded-3 shadow-sm h-100 feature-hover-effect text-center text-lg-start">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                            <svg class="bi" width="1.5em" height="1.5em">
+                                <use xlink:href="#phone-laptop"></use>
+                            </svg>
+                        </div>
+                        <h3 class="fs-4 fw-semibold text-body-emphasis mt-3 mb-3">Seamless Responsiveness</h3>
+                        <p class="text-body-secondary mb-4">
+                            Leveraging Bootstrap 5's powerful mobile-first grid system and responsive utilities, we ensure
+                            your website adapts flawlessly to desktops, tablets, and smartphones used across Karachi and
+                            beyond.
+                        </p>
+                        <a href="#" class="icon-link fw-semibold text-decoration-none">
+                            Explore Grid System
+                            <svg class="bi align-middle" width="1em" height="1em">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div
+                        class="feature-card bg-white p-4 rounded-3 shadow-sm h-100 feature-hover-effect text-center text-lg-start">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
+                            <svg class="bi" width="1.5em" height="1.5em">
+                                <use xlink:href="#collection"></use>
+                            </svg>
+                        </div>
+                        <h3 class="fs-4 fw-semibold text-body-emphasis mt-3 mb-3">Extensive Component Library</h3>
+                        <p class="text-body-secondary mb-4">
+                            Accelerate development with Bootstrap's vast collection of pre-built, customizable components
+                            like navbars, cards, modals, and forms, ensuring brand consistency.
+                        </p>
+                        <a href="#" class="icon-link fw-semibold text-decoration-none">
+                            View Components
+                            <svg class="bi align-middle" width="1em" height="1em">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div
+                        class="feature-card bg-white p-4 rounded-3 shadow-sm h-100 feature-hover-effect text-center text-lg-start">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-info bg-gradient fs-2 mb-3">
+                            <svg class="bi" width="1.5em" height="1.5em">
+                                <use xlink:href="#toggles2"></use>
+                            </svg>
+                        </div>
+                        <h3 class="fs-4 fw-semibold text-body-emphasis mt-3 mb-3">Deep Customization & Utilities</h3>
+                        <p class="text-body-secondary mb-4">
+                            Utilize Bootstrap 5's utility API and Sass variables for fine-grained control over styling and
+                            theming, enabling unique designs without excessive custom CSS.
+                        </p>
+                        <a href="#" class="icon-link fw-semibold text-decoration-none">
+                            Learn About Utilities
+                            <svg class="bi align-middle" width="1em" height="1em">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="phone-laptop" viewBox="0 0 16 16">
+            <path
+                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+            <path
+                d="M14 8a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0V8zM1.354 7.646a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 1 0-.708-.708L3.5 9.293V2.5a.5.5 0 0 0-1 0v6.793L1.354 7.646z" />
+        </symbol>
+        <symbol id="collection" viewBox="0 0 16 16">
+            <path
+                d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
+        </symbol>
+        <symbol id="toggles2" viewBox="0 0 16 16">
+            <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z" />
+            <path
+                d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-5a1 1 0 0 1 1-1h1.543c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2H7a1 1 0 1 1 0-2h2.543c.47-.89 1.27-1.595 2.197-1.957C12.958 1.05 14.45 1 16 1s3.042.05 4.26.293c.927.362 1.726 1.067 2.197 1.957H23a1 1 0 1 1 0 2h-1.465c-.34.588-.535 1.271-.535 2 0 .729.195 1.412.535 2H23a1 1 0 0 1 0 2h-2.543c-.47.89-1.27 1.595-2.197 1.957A10.001 10.001 0 0 1 16 11c-1.55 0-3.042-.05-4.26-.293-.927-.362-1.726-1.067-2.197-1.957H7a1 1 0 0 1-1-1zM16 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-1 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+        </symbol>
+        <symbol id="chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        </symbol>
+    </svg>
+
+    <!-- Pricing Section  -->
+    <section class="bg-light py-5">
+        <div class="container px-4 py-5" id="pricing">
+            <h2 class="pb-2 border-bottom text-center text-primary mb-5 fw-bold">Our Pricing Plans</h2>
+    
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+                <div class="col">
+                    <div class="card h-100 rounded-3 shadow-sm border-light">
+                        <div class="card-header py-3 bg-primary bg-opacity-10 border-light">
+                            <h4 class="my-0 fw-semibold">Basic</h4>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title pricing-card-title mb-0">PKR 15,000<small
+                                    class="text-body-secondary fw-light">/one-time</small></h1>
+                            <small class="text-muted mb-3">(Simple Landing Page)</small>
+                            <ul class="list-unstyled mt-3 mb-4 text-start flex-grow-1">
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Bootstrap 5 Setup</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Responsive (Mobile/Desktop)</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Up to 3 Sections</li>
+                                <li><svg class="bi me-1 text-muted align-middle" width="16" height="16">
+                                        <use xlink:href="#x-circle" />
+                                    </svg>Limited Component Use</li>
+                                <li><svg class="bi me-1 text-muted align-middle" width="16" height="16">
+                                        <use xlink:href="#x-circle" />
+                                    </svg>Basic Contact Form</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-outline-primary mt-auto btn-hover-effect">Choose
+                                Basic</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card h-100 rounded-3 shadow border-primary position-relative">
+                        <div class="position-absolute top-0 start-50 translate-middle-x bg-primary text-white px-3 py-1 rounded-bottom-pill fs-sm fw-semibold"
+                            style="margin-top:-1px; z-index:1;">Most Popular</div>
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-semibold">Standard</h4>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title pricing-card-title mb-0">PKR 35,000<small
+                                    class="text-body-secondary fw-light">/one-time</small></h1>
+                            <small class="text-muted mb-3">(Multi-page Website)</small>
+                            <ul class="list-unstyled mt-3 mb-4 text-start flex-grow-1">
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Bootstrap 5 Setup</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Fully Responsive Design</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Up to 5 Pages</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Extended Components</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Sass Customization</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Contact Form Integration</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Basic SEO Setup</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-primary mt-auto btn-hover-effect">Choose
+                                Standard</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card h-100 rounded-3 shadow-sm border-light">
+                        <div class="card-header py-3 bg-primary bg-opacity-10 border-light">
+                            <h4 class="my-0 fw-semibold">Premium</h4>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title pricing-card-title mb-3">Contact Us</h1>
+                            <ul class="list-unstyled mt-3 mb-4 text-start flex-grow-1">
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Everything in Standard PLUS:</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Unlimited Pages (within scope)</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Advanced Customization</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Custom JavaScript Features</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>E-commerce Integration Prep</li>
+                                <li><svg class="bi me-1 text-success align-middle" width="16" height="16">
+                                        <use xlink:href="#check-circle" />
+                                    </svg>Priority Support</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-outline-primary mt-auto btn-hover-effect">Request
+                                Quote</button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <p class="text-center text-muted mt-5">All prices are indicative. Please contact us for a detailed quote based
+                on your specific requirements in Karachi.</p>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path
+                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+        </symbol>
+        <symbol id="x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </symbol>
+    </svg>
+    <!-- Footer Section -->
+    <footer class="footer-section bg-dark text-bg-dark pt-5 pb-4">
+        <div class="container px-4" id="contact">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-primary fw-bold mb-3">DevStudio</h5>
+                    <p class="small text-muted pe-lg-3"> Your partner for modern, responsive Bootstrap 5 websites in
+                        Karachi. We focus on quality code and user-centric design.
+                    </p>
+                    <div class="mt-3">
+                        <a href="#" class="link-light me-3 footer-social-icon" title="Facebook"><svg class="bi" width="20"
+                                height="20">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a>
+                        <a href="#" class="link-light me-3 footer-social-icon" title="Twitter"><svg class="bi" width="20"
+                                height="20">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a>
+                        <a href="#" class="link-light me-3 footer-social-icon" title="LinkedIn"><svg class="bi" width="20"
+                                height="20">
+                                <use xlink:href="#linkedin"></use>
+                            </svg></a>
+                        <a href="#" class="link-light footer-social-icon" title="GitHub"><svg class="bi" width="20"
+                                height="20">
+                                <use xlink:href="#github"></use>
+                            </svg></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3 fw-semibold">Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-link">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 footer-link">About</a></li>
+                        <li class="nav-item mb-2"><a href="#features" class="nav-link p-0 footer-link">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#services" class="nav-link p-0 footer-link">Services</a></li>
+                        <li class="nav-item mb-2"><a href="#pricing" class="nav-link p-0 footer-link">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 footer-link">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3 fw-semibold">Contact</h5>
+                    <ul class="nav flex-column small">
+                        <li class="nav-item mb-2 text-muted"><svg class="bi me-2 align-middle" width="16" height="16">
+                                <use xlink:href="#geo-alt-fill"></use>
+                            </svg> Karachi, Sindh</li>
+                        <li class="nav-item mb-2"><a href="mailto:info@devstudio.example"
+                                class="nav-link p-0 footer-link"><svg class="bi me-2 align-middle" width="16" height="16">
+                                    <use xlink:href="#envelope"></use>
+                                </svg> Email Us</a></li>
+                        <li class="nav-item mb-2"><a href="tel:+92XXXXXXXXXX" class="nav-link p-0 footer-link"><svg
+                                    class="bi me-2 align-middle" width="16" height="16">
+                                    <use xlink:href="#telephone"></use>
+                                </svg> Call Us</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="text-white mb-3 fw-semibold">Stay Updated</h5>
+                    <p class="small text-muted">Get occasional updates on new services and Bootstrap tips.</p>
+                    <form id="newsletterForm">
+                        <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                        <div class="input-group mb-3">
+                            <input id="newsletterEmail" type="email" class="form-control form-control-dark"
+                                placeholder="Your Email Address" required>
+                            <button class="btn btn-primary btn-hover-effect" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+            <div class="text-center text-muted border-top border-secondary pt-4 mt-4">
+                <p class="small mb-0">&copy; 2025 DevStudio, Karachi. All Rights Reserved.</p>
+            </div>
+    
+        </div>
+    </footer>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="facebook" viewBox="0 0 16 16">...</symbol>
+        <symbol id="twitter" viewBox="0 0 16 16">...</symbol>
+        <symbol id="linkedin" viewBox="0 0 16 16">...</symbol>
+        <symbol id="github" viewBox="0 0 16 16">...</symbol>
+        <symbol id="geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+        </symbol>
+        <symbol id="envelope" viewBox="0 0 16 16">
+            <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+        </symbol>
+        <symbol id="telephone" viewBox="0 0 16 16">
+            <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.612l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+        </symbol>
+    </svg>
+
+    <button type="button" class="btn btn-primary rounded-circle p-2 lh-1 shadow" id="scrollToTopBtn"
+        title="Scroll back to top">
+        <svg class="bi" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <use xlink:href="#arrow-up-short"></use>
+        </svg>
+    </button>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="arrow-up-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+        </symbol>
+    </svg>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Get the button element by its ID
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      
+        // Set the scroll threshold (how many pixels down the page before the button appears)
+        const scrollThreshold = 250; // Adjust this value as needed (e.g., 200, 300)
+      
+        // Function to toggle button visibility based on scroll position
+        function toggleScrollTopButtonVisibility() {
+          // Check scroll position (cross-browser compatibility)
+          const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      
+          if (scrolled > scrollThreshold) {
+            // If scrolled past the threshold, add the 'show' class
+            scrollToTopBtn.classList.add("show");
+          } else {
+            // Otherwise, remove the 'show' class
+            scrollToTopBtn.classList.remove("show");
+          }
+        }
+      
+        // Function to scroll the page smoothly to the top
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,              // Scroll to the top edge of the page
+            behavior: "smooth"   // Enable smooth scrolling animation
+          });
+        }
+      
+        // --- Event Listeners ---
+        // Listen for scroll events on the window
+        window.addEventListener("scroll", toggleScrollTopButtonVisibility);
+      
+        // Listen for click events on the button
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+      
+      </script>
+  </body>
+</html>
+
+

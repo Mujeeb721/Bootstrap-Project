@@ -1,0 +1,185 @@
+/* --- Logo Hover Effect --- */
+.logo-hover-effect {
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Smooth transition for scale and fade */
+    display: inline-block; /* Needed for transform to apply correctly */
+  }
+  
+  .logo-hover-effect:hover {
+    transform: scale(1.03); /* Slightly enlarge the logo area */
+    opacity: 0.8;        /* Slightly fade the logo area */
+  }
+  
+  /* --- Navbar Items (Nav Pills) Hover Effect --- */
+  .nav-pills .nav-link {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Hover effect for NON-ACTIVE nav links */
+  .nav-pills .nav-link:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter background shade on hover (adjust color/opacity) */
+    /* color: #fff; */ /* Optional: Change text color on hover */
+    transform: translateY(-2px); /* Give a subtle "lift" effect */
+    /* Or use scale: transform: scale(1.05); */
+  }
+  
+  /* Optional: Add a very subtle hover effect even for the ACTIVE link */
+  .nav-pills .nav-link.active:hover {
+     opacity: 0.9; /* Slightly fade the active item on hover */
+     /* filter: brightness(1.1); /* Or slightly brighten it */
+  }
+
+.image-hover-effect {
+    /* Define the transition on the base state for smoothness */
+    transition: transform 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+    /* box-shadow default is none */
+  }
+  
+  .image-hover-effect:hover {
+    /* Slightly scale up the image */
+    transform: scale(1.05);
+    /* Add a soft, noticeable shadow */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* Make sure the image stays on top if overlapping occurs */
+    z-index: 10;
+    position: relative; /* Needed for z-index to work reliably */
+  }
+  
+
+.about-box {
+    /* Subtle gradient overlay on top of bg-light */
+    /* background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(230, 240, 255, 0.3)); */
+
+    /* Or apply a slightly more pronounced shadow than Bootstrap's shadow-sm */
+     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important; /* Override shadow-sm */
+     transition: box-shadow 0.3s ease-in-out;
+}
+
+.about-box:hover {
+    /* Enhance shadow slightly on hover */
+     box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Button Hover Effect */
+.btn-hover-effect {
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+
+.feature-card {
+    /* Base styles are applied via Bootstrap classes (bg-white, p-4, etc.) */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-hover-effect:hover {
+    transform: translateY(-6px); /* Lift card slightly more */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important; /* Enhance shadow more */
+}
+
+/* Style the feature icon wrapper */
+.feature-icon {
+    width: 4rem;  /* Fixed width */
+    height: 4rem; /* Fixed height */
+    border-radius: 0.75rem; /* Slightly more rounded corners */
+}
+
+/* Improve alignment and spacing */
+.feature-card h3 {
+    min-height: 3.5em; /* Help align headings if text wraps differently */
+}
+
+.feature-card p {
+    min-height: 7em; /* Help align paragraphs if text wraps differently */
+}
+
+.feature-card .icon-link svg {
+     transition: transform 0.2s ease; /* Smooth icon movement */
+}
+
+.feature-card .icon-link:hover svg {
+    transform: translateX(3px); /* Move arrow slightly on link hover */
+}
+
+.footer-section {
+    /* background-color: #212529; Applied via bg-dark */
+    /* color: #adb5bd; Applied via text-bg-dark */
+}
+
+/* Style footer links for better visibility on dark background */
+.footer-section .nav-link.footer-link {
+    color: rgba(255, 255, 255, 0.65); /* Lighter than text-muted, but not full white */
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-section .nav-link.footer-link:hover,
+.footer-section .nav-link.footer-link:focus {
+    color: rgba(255, 255, 255, 0.95); /* Brighter on hover */
+}
+
+/* Style social icons hover */
+.footer-section .footer-social-icon svg {
+   transition: opacity 0.2s ease-in-out;
+}
+ .footer-section .footer-social-icon:hover svg {
+   opacity: 0.75;
+}
+
+/* Style for dark form control (Bootstrap's default might need tweaking) */
+.form-control-dark {
+   background-color: rgba(255, 255, 255, 0.1);
+   border-color: rgba(255, 255, 255, 0.2);
+   color: #fff;
+}
+ .form-control-dark::placeholder {
+     color: rgba(255, 255, 255, 0.5);
+ }
+ .form-control-dark:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    /* Use primary focus ring from Bootstrap variables */
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Ensure copyright text has enough contrast */
+.footer-section .border-top {
+    border-color: rgba(255, 255, 255, 0.15) !important; /* Darker border */
+}
+.footer-section .text-muted {
+     /* Ensure text-muted is readable on dark background */
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#scrollToTopBtn {
+    position: fixed;          /* Keep it fixed relative to the viewport */
+    bottom: 25px;             /* Distance from the bottom */
+    right: 25px;              /* Distance from the right */
+    z-index: 1030;            /* Ensure it's above most elements (Bootstrap default is ~1000) */
+    display: none;            /* Hidden by default */
+    opacity: 0;               /* Start fully transparent */
+    visibility: hidden;       /* Use visibility for smoother transitions */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s, transform 0.3s ease-in-out; /* Smooth fading and scaling */
+    transform: translateY(10px); /* Start slightly lower */
+  }
+  
+  #scrollToTopBtn.show {
+    display: inline-block;    /* Make it visible (inline-block for button) */
+    opacity: 0.8;             /* Slightly transparent normally */
+    visibility: visible;      /* Make it accessible */
+    transform: translateY(0);   /* Move to final position */
+  }
+  
+  #scrollToTopBtn:hover {
+    opacity: 1;               /* Fully opaque on hover */
+    /* Optional: Add slight scale on hover if not using btn-hover-effect */
+    /* transform: scale(1.05); */
+  }
+  
+  /* Ensure SVG icon aligns well */
+  #scrollToTopBtn svg {
+    vertical-align: middle;
+  }
